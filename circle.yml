@@ -1,6 +1,7 @@
 dependencies:
   pre:
     - sudo aptitude install -y python-pymongo scons build-essential libboost-filesystem-dev libboost-program-options-dev libboost-system-dev libboost-thread-dev
+    - sudo apt-get install --only-upgrade gcc
 test:
   override:
     - scons all
