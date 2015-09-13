@@ -1,0 +1,6 @@
+dependencies:
+  pre:
+    - aptitude install -y python-pymongo scons build-essential libboost-filesystem-dev libboost-program-options-dev libboost-system-dev libboost-thread-dev
+test:
+  override:
+    - scons all
