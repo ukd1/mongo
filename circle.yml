@@ -4,4 +4,5 @@ dependencies:
     - sudo apt-get install --only-upgrade gcc
 test:
   override:
+    - scons unittests
     - scons all
